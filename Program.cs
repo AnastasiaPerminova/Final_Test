@@ -8,13 +8,13 @@
 
 Console.WriteLine("Введите  количество элементов в массиве : ");
 int number = Convert.ToInt32(Console.ReadLine ());
-string[] array = new string [number];
+string[] array1 = new string [number];
 int count =0;
-for (int i = 0; i < array.Length; i++)
+for (int i = 0; i < array1.Length; i++)
 {   
     Console.WriteLine($"Введите {i + 1}-й элемент  в массив : ");
     string element =Console.ReadLine ();
-    array [i] = element;
+    array1 [i] = element;
     if (element.Length <= 3)
     {
         count++;
@@ -22,15 +22,15 @@ for (int i = 0; i < array.Length; i++)
 
 }
 Console.WriteLine("Были введены строки: ");
-Console.WriteLine('[' + string.Join(", ", array) + ']');
+Console.WriteLine('[' + string.Join(", ", array1) + ']');
 string[] array2 =  new string [count];
 int count2 = 0;
-for (int i = 0; i < array.Length; i++)
+for (int i = 0; i < array1.Length; i++)
 {   
   
-    if (array [i].Length <= 3)
+    if (array1 [i].Length <= 3)
     {
-        array2[count2] = array[i];
+        array2[count2] = array1[i];
         count2++;
     }
 
